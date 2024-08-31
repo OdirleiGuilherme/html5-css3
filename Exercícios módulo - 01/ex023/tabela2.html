@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        table{
+            
+            border-collapse: collapse;
+            width: 600px;
+            height: 600px;
+            
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center; /* Alinhamento horizontal*/
+            vertical-align: middle /* Alinhamento vertical com as opções top, bottom e middle;*/
+        }
+
+        .numero{
+            text-align: right;
+            background-color: darkkhaki;
+        }
+
+        /* 
+        Por padrão no excel quando inserimos um número este se alinha a direita, então podemos na ciração de tabela colocar essa mesma funcionalidade.
+
+        para isso basta criamos uma classe e aplicar o text-aling: right. farei o exemplo na tabela D3 e A2.*/
+
+       
+    </style>
+</head>
+<body>
+
+    <h1>Criando Tabelas</h1>
+
+    <!-- 
+        Hierarquia de criação de uma tabela (simples)
+        * TABLE - criação de tabela
+         * TABLE ROW - criação de linhas
+          * TABLE HEADER - cabeçalho da tabela
+           * TABLE DATA - criação de tabela de dados
+    -->
+
+    <table>
+
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+
+        <tr>
+            <td class="numero">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td class="numero">D3</td>
+        </tr>
+
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
