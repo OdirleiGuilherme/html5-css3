@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>criando tabelas grandes</title>
+    <title>Alinhando conteúdo da tabela e elemento caption</title>
     <style>
 
         body{
@@ -11,6 +11,7 @@
             font-size: 16px;
         }
 
+        /* Alinhando texto ta tabela ao centro*/
         table{
             border-collapse: collapse;
             padding: 8px;
@@ -30,6 +31,7 @@
             color: white;
         }
 
+        /* Alinhando texto do TD E TH a esquerda da tabela*/
         td,th{
             border: 2px solid black;
             padding: 10px;
@@ -37,7 +39,7 @@
             
         }
 
-                 
+        /* Alinhando os números da tabela a direita da mesma forma padrão que é no excel*/
         td.num{
             text-align: right;
         }
@@ -51,18 +53,25 @@
 </head>
 <body>
 
-    <h1>Criando Tabelas Grandes</h1>
+    <h1>Alinhando conteúdo em tabelas e  aplicando caption a tabela</h1>
+
+
 
     <!-- 
-        ANATOMIA PARA TABELAS GRANDES
-        CAPTION
-        TABLE
-            THEAD
-                * tr, td, th
-            TBODY
-                * tr, td, th
-            TFOOT
-                * tr, td, th
+        Obs com os dados da tabela podemos estliza-los da mesma forma que texto, acima onde se econtra a .css coloquei alguns alinhamentos de conteúdos da tabela. 
+
+        ***ANATOMIA PARA TABELAS GRANDES****
+        
+            ** CAPTION 
+                representa o título da tabela. veja o exemplo dele abaixo na linha 78
+
+            TABLE
+                THEAD
+                    * tr, td, th
+                TBODY
+                    * tr, td, th
+                TFOOT
+                    * tr, td, th
     -->
 
     <table>
