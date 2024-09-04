@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Colunas com colgroup</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 350px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th{
+            text-align: center;
+        }
+
+        col.cnome{
+            background-color: cornflowerblue;
+        }
+
+        col.cprofi{
+            background-color: burlywood;
+        }
+
+        col.cgroup{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Agrupando Colunas com colgroup</h1>
+    
+    <table>
+        <!--Para uma tabela ficaria muito complicado estilizar cada coluna e cada linha dessa coluna, 
+            Para isso utilizaremos a tag disponivel no HTML 5 chamada COLGROUP, na abela abaxio temos 5 colunas
+            então criaremos a tag colgroup e dentro de COLGROUP criaremos 4 COL para NOME, SEXO, IDADADE E PROFISSÃO, podemos dar uma ID ou CLASSE para elas.
+            vou utilizar classe. Essa tag pode ser usada em qualquer local do body mas é bom utilizar dentro da tag TABLE-->
+
+        <!--Outra maneira de trabalhar para estilizar colunas é criar uma classe e nomear e depois utilizar SPAN ="2" DOIS REPRESENTA AQUI AS COLUNAS SEXO E IDADE, LEMBRANDO QUE SE FOR UTILIZAR O SPAN NÃO PODE TER AS COLUNAS COM CLASSE DENTRO DO COLGROUP -->
+        
+            <colgroup>
+            <col class="cnome">
+            <col class="cgroup" span="2"> <!--Assim vamos alterar duas colunas de uma vez a culuna sexo e idade-->
+            <col class="cprofi">
+            
+        </colgroup>
+
+        <caption>Cadastro</caption>
+       
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Odirlei</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Eduarda</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Militar</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Vendedor</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
