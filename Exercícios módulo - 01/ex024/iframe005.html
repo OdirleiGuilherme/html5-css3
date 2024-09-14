@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloqueando script no iframe</title>
+</head>
+<body>
+    <h1>Bloqueando script num iframe</h1>
+
+    <h2>iframe abaixo sem bloqueio para script</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem amet animi illum reiciendis excepturi alias, veniam fugit? Eum voluptatibus ut aliquam rerum accusantium, doloremque vero dignissimos quo nemo libero minima!</p>
+
+    <iframe src="paginas-extras/page05.html" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-referrer" ></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis quasi fugit asperiores qui porro vitae quidem ab iste quae consequatur nulla, corporis totam nisi quod iure? Doloribus, possimus nam.</p>
+
+    <h2>iframe com bloqueio de script</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem amet animi illum reiciendis excepturi alias, veniam fugit? Eum voluptatibus ut aliquam rerum accusantium, doloremque vero dignissimos quo nemo libero minima!</p>
+
+    <iframe src="paginas-extras/page05.html" sandbox="sandbox" referrerpolicy="no-referrer" >
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis quasi fugit asperiores qui porro vitae quidem ab iste quae consequatur nulla, corporis totam nisi quod iure? Doloribus, possimus nam.</p>
+</body>
+</html>
