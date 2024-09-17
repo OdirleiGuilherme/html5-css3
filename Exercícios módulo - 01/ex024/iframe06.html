@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdo no iframe</title>
+    <style>
+
+        h1#titulo-principal{
+            color: white;
+            background-color: blue;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            
+        }
+
+        h2{
+            background-color: cadetblue;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo-principal">Incorporando vídeos, mapas e arquivos google docs no iframe</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam optio at deserunt autem earum architecto. Fuga repudiandae, qui obcaecati accusantium perferendis eius tempora ipsam dicta maiores nemo culpa quibusdam. Vitae.</p>
+
+    <h1>Vídeos:</h1>
+    
+    <div>
+        <h2>Vímeo</h2>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/272759515?h=3cc00304e7" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <h2>Youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AEIVlYegHx8?si=2tva7XGUoh91Lznv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <h1>Mapas:</h1>
+
+    <h2>Mapa do Google maps</h2>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus perspiciatis ipsa, vero, atque tempora voluptate distinctio eaque minima officia laudantium repudiandae exercitationem. Veritatis nam optio maxime, aliquam vel cupiditate! Tenetur.</p>
+
+    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5093957779873!2d-43.18217612574204!3d-22.89457483743271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5732a12a31%3A0x316901f971660ce1!2sMuseu%20do%20Amanh%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1726607842665!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+    <h2>Mapa do Waze</h2>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam totam molestias asperiores corrupti ipsam! Eaque voluptatem harum quis tempore temporibus ab sit quos, rerum, qui voluptatibus, earum voluptatum praesentium exercitationem.</p>
+
+    <div><iframe src="https://embed.waze.com/iframe?zoom=16&lat=-22.894020&lon=-43.179350&ct=livemap" width="600" height="450" allowfullscreen></iframe></div>
+
+    <h2>Google Docs:</h2>
+
+    <iframe src="https://docs.google.com/presentation/d/1S-u5ynN6uYbTa3WO5TxTIdaBdxaB0DdBo0iUEsNuhWI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+</body>
+</html>
