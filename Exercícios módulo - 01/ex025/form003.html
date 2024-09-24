@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios003</title>
+</head>
+<body>
+    <h1>Criando formulários usando Number, Month, Date e Time</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" minlength="5" maxlength="20" size="10" placeholder="usuário" autocomplete="name" required>
+        </p>
+
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" value="3" step="0.1" required>
+        </p>
+
+        <p>
+            <label for="imes">Período letivo:</label>
+            <input type="month" name="mes" id="imes" value="2023-03">
+
+        </p>
+
+        <p>
+            <label for="idia">Data da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <p>
+            <label for="ihora">Horario da prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <label for="imanha">Manhã</label>
+            <input type="checkbox" name="manha" id="imanha">
+            <label for="ipocao">Tarde</label>
+            <input type="checkbox" name="tarde" id="itarde">
+            <label for="ipocao">Noite</label>
+            <input type="checkbox" name="noite" id="inoite">
+            
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
+    
+</body>
+</html>
